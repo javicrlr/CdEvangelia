@@ -1,0 +1,217 @@
+#jform_params_logoFile {
+	float: left;
+    height: 30px !important;
+    margin-right: 0 !important;
+}
+.input-append .add-on, .input-prepend .add-on {
+    height: 30px;
+    line-height: 30px;
+}
+#attrib-advanced .media-preview {
+	float: left;
+}
+#jform_params_templateColor {
+	height: 30px !important;
+}
+#jform_params_templateBackgroundColor {
+	height: 30px !important;
+}
+#jform_params_sitetitle {
+	height: 30px !important;
+}
+#attrib-advanced .controls {
+    margin-left: 150px;
+}
+#attrib-TPL_CDESIGNPRO_FONT .controls {
+    margin-left: 200px;
+}
+#jform_params_googlefontdefault {
+	height: 30px !important;
+}
+#jform_params_googlefonttitle {
+	height: 30px !important;
+}
+
+#attrib-mobile .control-group {
+	float: left !important;
+	margin-right: 20px;
+}
+#attrib-mobile .control-group .controls {
+	margin-left: 220px !important;
+}
+#attrib-tablet .control-group {
+	float: left !important;
+	margin-right: 20px;
+}
+#attrib-tablet .control-group .controls {
+	margin-left: 220px !important;
+}
+
+#attrib-pc .control-group {
+	float: left !important;
+	margin-right: 20px;
+}
+#attrib-pc .control-group .controls {
+	margin-left: 220px !important;
+}
+
+.selectdismode{
+	float: left !important;
+	margin-right: 10px !important;
+	width: 180px !important;
+}
+input{
+	float: left !important;
+	font-size: 16px !important;
+	height: 28px !important;
+	width: 115px !important;
+	margin-right: 10px !important;
+}
+#result input{
+	width: 255px !important;
+}
+
+.bs-example{
+        height:300px;
+    }
+.form-inline {
+	z-index: 999;
+}
+.slider-bar{
+        display:block; width:80px; background-color:darkred; position:relative;
+    }
+
+    .slider, .slider-bar{
+        height:30px;
+    }
+.top_1{
+	width: 30px !important;
+	border-radius: 10px;
+}
+
+#uno{ background-image:url(tres.png);   
+}
+
+*
+{
+	font-size:12px;
+	font-family:verdana;
+}
+.demo-content
+{
+	background: none repeat scroll 0 0 #DADADA;
+	border: 2px solid #DDDDDD;
+	font-size: 12px;
+	width: 900px;
+	padding:20px;
+	margin:0px auto;
+}
+.demo-content h3{
+	padding:0px;
+	margin:0px 0px 20px;
+	font-size:18px;
+}
+
+.selectdismode {
+	float: left !important;
+}
+
+#attrib-TPL_CDESIGNPRO_MOBILE_NAME .control-group, #attrib-TPL_CDESIGNPRO_TABLET_NAME .control-group, #attrib-TPL_CDESIGNPRO_PC_NAME .control-group  {
+	float: left;
+    margin: 0px;
+}
+
+
+#myTabContent {
+	overflow: hidden;
+}
+#attrib-TPL_CDESIGNPRO_MOBILE_NAME .controls, #attrib-TPL_CDESIGNPRO_TABLET_NAME .controls, #attrib-TPL_CDESIGNPRO_PC_NAME .controls  {
+    margin-left: 0px;
+	margin-right: 10px;
+}
+#attrib-TPL_CDESIGNPRO_MOBILE_NAME .control-label, #attrib-TPL_CDESIGNPRO_TABLET_NAME .control-label, #attrib-TPL_CDESIGNPRO_PC_NAME .control-label {
+    padding-right: 0;
+}
+#attrib-TPL_CDESIGNPRO_MOBILE_NAME label, #attrib-TPL_CDESIGNPRO_TABLET_NAME label, #attrib-TPL_CDESIGNPRO_PC_NAME label {
+	margin: 0px;
+}
+.spacer {
+	height: auto !important;
+}
+.form-horizontal a {
+    font-size: 12px;
+    font-weight: 600;
+    color: #0088cc;
+}
+label {
+    font-size: 12px;
+    font-weight: 600;
+    color: #999;
+	display: inline !important;
+}
+#menu-assignment label {
+	display: block !important;
+}
+#menu-assignment label input{
+	margin-left: 70px;
+    margin-top: -5px;
+}
+#myTabContent {
+	margin-top: 20px;
+}
+.btn {
+ 
+}
+.modal {
+    position: relative;
+	z-index: 1000;
+}
+
+
+.selected {
+    background-color: #ccc;
+}
+
+#emotion label {
+    display: inline-block;
+    cursor: pointer;
+}
+
+#emotion label img {
+    padding: 3px;
+}
+.com_templates .subhead-collapse {
+	display: block;
+}
+.com_templates .btn-subhead {
+	display: none;
+}
+.com_templates .navbar {
+	min-height: 5px;
+}
+
+.com_templates .navbar-inner .nav-collapse {
+	display: block;
+}
+.com_templates .navbar-inner .nav>li.disabled>a {
+	color: #FFFFFF;
+	font-size: 15px;
+}
+.com_templates .modal {
+	display: block;
+	float: left;
+}
+.com_templates .media-preview {
+	float: left;
+}
+.com_templates .chzn-search {
+	display: none;
+}
+.com_templates .chzn-container {
+	float: left;
+	margin-right: 10px;
+}
+.com_templates .chzn-container-single .chzn-single {
+	height: 27px;
+	font-weight:normal;
+}

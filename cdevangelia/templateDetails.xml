@@ -1,0 +1,1244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?DOCTYPE install PUBLIC "-//Joomla! 3.0//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/3.0/template-install.dtd"?>
+<extension version="3.1" type="template" client="site">
+	<name>cdevangelia</name>
+	<version>3.3</version>
+	<creationDate>30/07/2014</creationDate>
+	<author>Javier Cruz Lora</author>
+	<authorEmail>contact@templatef5.com</authorEmail>
+	<copyright>Copyright (C) 20014 - 2014 Javier Cruz Lora, Inc. All rights reserved.</copyright>
+	<description>
+
+<![CDATA[
+	<link rel="stylesheet" type="text/css" href="../templates/cdevangelia/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="../templates/cdevangelia/css/template_admin.css" />
+  	<script type="text/javascript" src="../templates/cdevangelia/js/bootstrap.min.js"></script>
+  <h3>EVANGELIA</h3>
+	<p>Plantilla profesional que permite la presentación de tu empresa o catálogo de una forma profesional con un estilo moderno.</p>
+	<p>Como todas las plantillas de Cloudesign permite configurar multiples posiciones, incluso el usuario puede forzar las posiciones que se muestran o no, en cada uno de los dispositivos (mobile, tablet y PC) y el número de columnas (de un total de 12) que ocupan en el ancho de la página.</p> ]]>
+	</description>
+	<files>
+		<filename>favicon.ico</filename>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<folder>css</folder>
+		<folder>admin</folder>
+		<folder>language</folder>
+		<folder>inc</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<folder>less</folder>
+		<folder>html</folder>
+	</files>
+	<positions>
+		<position>main-menu</position>
+		<position>search</position>
+		<position>contact</position>
+		<position>menu-C</position>
+		<position>menu-D</position>
+		<position>top1-A</position>
+		<position>top1-B</position>
+		<position>top1-C</position>
+		<position>top1-D</position>
+		<position>header-A</position>
+		<position>header-B</position>
+		<position>header-C</position>
+		<position>header-D</position>
+		<position>top2-A</position>
+		<position>top2-B</position>
+		<position>top2-C</position>
+		<position>top2-D</position>
+		<position>top3-A</position>
+		<position>top3-B</position>
+		<position>top3-C</position>
+		<position>top3-D</position>
+		<position>top4-A</position>
+		<position>top4-B</position>
+		<position>top4-C</position>
+		<position>top4-D</position>
+		<position>left-A</position>
+		<position>left-B</position>
+		<position>main-top-A</position>
+		<position>main-top-B</position>
+		<position>main-bottom-A</position>
+		<position>main-bottom-B</position>
+		<position>right-A</position>
+		<position>right-B</position>
+		<position>bottom1-A</position>
+		<position>bottom1-B</position>
+		<position>bottom1-C</position>
+		<position>bottom1-D</position>
+		<position>bottom2-A</position>
+		<position>bottom2-B</position>
+		<position>bottom2-C</position>
+		<position>bottom2-D</position>
+		<position>bottom3-A</position>
+		<position>bottom3-B</position>
+		<position>bottom3-C</position>
+		<position>bottom3-D</position>
+		<position>bottom4-A</position>
+		<position>bottom4-B</position>
+		<position>bottom4-C</position>
+		<position>bottom4-D</position>
+		<position>data-A</position>
+		<position>data-B</position>
+		<position>data-C</position>
+		<position>data-D</position>
+		<position>footer-A</position>
+		<position>footer-B</position>
+		<position>footer-C</position>
+		<position>footer-D</position>
+		<position>copyright</position>
+	</positions>
+	<languages folder="language">
+		<language tag="es-ES">es-ES/es-ES.tpl_cdevangelia.ini</language>
+		<language tag="es-ES">es-ES/es-ES.tpl_cdevangelia.sys.ini</language>
+		<language tag="en-GB">en-GB/en-GB.tpl_cdevangelia.ini</language>
+		<language tag="en-GB">en-GB/en-GB.tpl_cdevangelia.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="advanced" addfieldpath="/templates/cdevangelia/admin">
+				<field name="sitestyle" type="list" default="style1"
+					label="TPL_CDEVANGELIA_SITESTYLE_LABEL"
+					description="TPL_CDEVANGELIA_SITESTYLE_DESC">
+					<option value="">TPL_CDEVANGELIA_SITESTYLEDEFAULT_SELECT</option>
+					<option value="style1">TPL_CDEVANGELIA_SITESTYLE1_SELET</option>
+					<option value="style2">TPL_CDEVANGELIA_SITESTYLE2_SELET</option>
+					<option value="style3">TPL_CDEVANGELIA_SITESTYLE3_SELET</option>
+					<option value="style4">TPL_CDEVANGELIA_SITESTYLE4_SELET</option>
+					<option value="style5">TPL_CDEVANGELIA_SITESTYLE5_SELET</option>
+					<option value="style6">TPL_CDEVANGELIA_SITESTYLE6_SELET</option>
+					<option value="style7">TPL_CDEVANGELIA_SITESTYLE7_SELET</option>
+					<option value="style8">TPL_CDEVANGELIA_SITESTYLE8_SELET</option>
+				</field>
+				<field name="sitetitle"  type="text" default=""
+					label="JGLOBAL_TITLE"
+					description="JFIELD_ALT_PAGE_TITLE_LABEL"
+					filter="string" />
+				<field name="templateBackgroundColor" class="" type="color" default=""
+						label="TPL_CDEVANGELIA_BACKGROUND_COLOR_LABEL"
+						description="TPL_CDEVANGELIA_BACKGROUND_COLOR_DESC" />
+				<field name="iconleftfixed" type="Iconselect"  default="callicondark.png" label="TPL_CDEVANGELIA_CDLEFTICONSELECT_LABEL" description="TPL_CDEVANGELIA_CDLEFTICONSELECT_DESC" />
+				<field name="cdlefticonurl" class="" type="text" default="http://www.cloudesign.es/index.php/contactar"
+						label="TPL_CDEVANGELIA__CDLEFTICONURL_LABEL"
+						description="TPL_CDEVANGELIA__CDLEFTICONURL_DESC" />
+				<field name="cdlefticonwidth" class="" type="text" default="25"
+						label="TPL_CDEVANGELIA__CDLEFTICONWIDTH_LABEL"
+						description="TPL_CDEVANGELIA__CDLEFTICONWIDTH_DESC" />
+				<field name="iconrightfixed" type="Iconselectright" default="searchicondarkright.png" label="TPL_CDEVANGELIA_CDRIGHTICONSELECT_LABEL" description="TPL_CDEVANGELIA_CDRIGHTICONSELECT_DESC" />
+				<field name="cdrighticonurl" class="" type="text" default=""
+						label="TPL_CDEVANGELIA__CDRIGHTICONURL_LABEL"
+						description="TPL_CDEVANGELIA__CDRIGHTICONURL_DESC" />
+				<field name="cdrighticonwidth" class="" type="text" default="25"
+						label="TPL_CDEVANGELIA__CDRIGHTICONWIDTH_LABEL"
+						description="TPL_CDEVANGELIA__CDRIGHTICONWIDTH_DESC" />
+				<field name="pcsearch" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_PC_SEARCH_LABEL" description="TPL_CDEVANGELIA_MOBILE_TOP1A_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="tabletsearch" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_TABLET_SEARCH_LABEL" description="TPL_CDEVANGELIA_TABLET_SEARCH_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="mobilesearch" type="radio" class="btn-group" default="0" label="TPL_CDEVANGELIA_MOBILE_SEARCH_LABEL" description="TPL_CDEVANGELIA_MOBILE_SEARCH_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="pccontact" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_PC_CONTACT_LABEL" description="TPL_CDEVANGELIA_PC_CONTACT_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="tabletcontact" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_TABLET_CONTACT_LABEL" description="TPL_CDEVANGELIA_TABLET_CONTACT_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="mobilecontact" type="radio" class="btn-group" default="0" label="TPL_CDEVANGELIA_MOBILE_CONTACT_LABEL" description="TPL_CDEVANGELIA_MOBILE_CONTACT_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="fulltop1Color" class="" type="color" default=""
+						label="TPL_CDEVANGELIA_FULLTOP1COLOR_LABEL"
+						description="TPL_CDEVANGELIA_FULLTOP1COLOR_DESC" />
+				<field name="fulltop1Colorfont" class="" type="color" default=""
+						label="TPL_CDEVANGELIA_FULLTOP1COLORFONT_LABEL"
+						description="TPL_CDEVANGELIA_FULLTOP1COLORFONT_DESC" />
+				<field name="fullmenulogoColor" class="" type="color" default=""
+						label="TPL_CDEVANGELIA_FULLMENULOGOCOLOR_LABEL"
+						description="TPL_CDEVANGELIA_FULLMENULOGOCOLOR_DESC" />
+				<field name="fullmenulogoColorfont" class="" type="color" default=""
+						label="TPL_CDEVANGELIA_FULLMENULOGOCOLORFONT_LABEL"
+						description="TPL_CDEVANGELIA_FULLMENULOGOCOLORFONT_DESC" />
+				<field name="fullheaderColor" class="" type="color" default=""
+						label="TPL_CDEVANGELIA_FULLHEADERCOLOR_LABEL"
+						description="TPL_CDEVANGELIA_FULLHEADERCOLOR_DESC" />
+				<field name="fullheaderColorfont" class="" type="color" default=""
+						label="TPL_CDEVANGELIA_FULLHEADERCOLORFONT_LABEL"
+						description="TPL_CDEVANGELIA_FULLHEADERCOLORFONT_DESC" />
+				<field name="fulltop2Color" class="" type="color" default=""
+						label="TPL_CDEVANGELIA_FULLTOP2COLOR_LABEL"
+						description="TPL_CDEVANGELIA_FULLTOP2COLOR_DESC" />
+				<field name="fulltop2Colorfont" class="" type="color" default="#4d8a89"
+						label="TPL_CDEVANGELIA_FULLTOP2COLORFONT_LABEL"
+						description="TPL_CDEVANGELIA_FULLTOP2COLORFONT_DESC" />
+				<field name="fulltop3Color" class="" type="color" default=""
+						label="TPL_CDEVANGELIA_FULLTOP3COLOR_LABEL"
+						description="TPL_CDEVANGELIA_FULLTOP3COLOR_DESC" />
+				<field name="fulltop3Colorfont" class="" type="color" default=""
+						label="TPL_CDEVANGELIA_FULLTOP3COLORFONT_LABEL"
+						description="TPL_CDEVANGELIA_FULLTOP3COLORFONT_DESC" />
+				<field name="fulltop4Color" class="" type="color" default=""
+						label="TPL_CDEVANGELIA_FULLTOP4COLOR_LABEL"
+						description="TPL_CDEVANGELIA_FULLTOP4COLOR_DESC" />
+				<field name="fulltop4Colorfont" class="" type="color" default="#4d8a89"
+						label="TPL_CDEVANGELIA_FULLTOP4COLORFONT_LABEL"
+						description="TPL_CDEVANGELIA_FULLTOP4COLORFONT_DESC" />
+				<field name="fullmain" class="" type="color" default=""
+						label="TPL_CDEVANGELIA_FULLMAINCOLOR_LABEL"
+						description="TPL_CDEVANGELIA_FULLMAINCOLOR_DESC" />
+				<field name="fullmainfont" class="" type="color" default=""
+						label="TPL_CDEVANGELIA_FULLMAINCOLORFONT_LABEL"
+						description="TPL_CDEVANGELIA_FULLMAINCOLOR_DESC" />
+				<field name="fullbottom1" class="" type="color" default=""
+						label="TPL_CDEVANGELIA_FULLBOTTOM1COLOR_LABEL"
+						description="TPL_CDEVANGELIA_FULLBOTTOM1COLOR_DESC" />
+				<field name="fullbottom1font" class="" type="color" default=""
+						label="TPL_CDEVANGELIA_FULLBOTTOM1COLORFONT_LABEL"
+						description="TPL_CDEVANGELIA_FULLBOTTOM1COLORFONT_DESC" />
+				<field name="fullbottom2" class="" type="color" default=""
+						label="TPL_CDEVANGELIA_FULLBOTTOM2COLOR_LABEL"
+						description="TPL_CDEVANGELIA_FULLBOTTOM2COLOR_DESC" />
+				<field name="fullbottom2font" class="" type="color" default=""
+						label="TPL_CDEVANGELIA_FULLBOTTOM2COLORFONT_LABEL"
+						description="TPL_CDEVANGELIA_FULLBOTTOM2COLORFONT_DESC" />
+				<field name="fullbottom3" class="" type="color" default=""
+						label="TPL_CDEVANGELIA_FULLBOTTOM3COLOR_LABEL"
+						description="TPL_CDEVANGELIA_FULLBOTTOM3COLOR_DESC" />
+				<field name="fullbottom3font" class="" type="color" default=""
+						label="TPL_CDEVANGELIA_FULLBOTTOM3COLORFONT_LABEL"
+						description="TPL_CDEVANGELIA_FULLBOTTOM3COLORFONT_DESC" />
+				<field name="fullbottom4" class="" type="color" default=""
+						label="TPL_CDEVANGELIA_FULLBOTTOM4COLOR_LABEL"
+						description="TPL_CDEVANGELIA_FULLBOTTOM4COLOR_DESC" />
+				<field name="fullbottom4font" class="" type="color" default=""
+						label="TPL_CDEVANGELIA_FULLBOTTOM4COLORFONT_LABEL"
+						description="TPL_CDEVANGELIA_FULLBOTTOM4COLORFONT_DESC" />
+				<field name="fullfooter" class="" type="color" default=""
+						label="TPL_CDEVANGELIA_FULLFOOTERCOLOR_LABEL"
+						description="TPL_CDEVANGELIA_FULLFOOTERCOLOR_DESC" />
+				<field name="fullfooterfont" class="" type="color" default=""
+						label="TPL_CDEVANGELIA_FULLFOOTERCOLORFONT_LABEL"
+						description="TPL_CDEVANGELIA_FULLFOOTERCOLORFONT_DESC" />
+				<field name="fulldata" class="" type="color" default=""
+						label="TPL_CDEVANGELIA_FULLDATACOLOR_LABEL"
+						description="TPL_CDEVANGELIA_FULLDATACOLOR_DESC" />
+				<field name="fulldatafont" class="" type="color" default=""
+						label="TPL_CDEVANGELIA_FULLDATACOLORFONT_LABEL"
+						description="TPL_CDEVANGELIA_FULLDATACOLORFONT_DESC" />
+				<field name="fullcopyright" class="" type="color" default=""
+						label="TPL_CDEVANGELIA_FULLCOPYRIGHTCOLOR_LABEL"
+						description="TPL_CDEVANGELIA_FULLCOPYRIGHTCOLOR_DESC" />
+				<field name="fullcopyrightfont" class="" type="color" default=""
+						label="TPL_CDEVANGELIA_FULLCOPYRIGHTCOLORFONT_LABEL"
+						description="TPL_CDEVANGELIA_FULLCOPYRIGHTCOLORFONT_DESC" />
+				<field name="codegoogleanalytics"  type="text" default=""
+					label="TPL_CDEVANGELIA_CODEGOOGLEANALYTICS_LABEL"
+					description="TPL_CDEVANGELIA__CODEGOOGLEANALYTICS_DESC"
+					filter="string" />
+				<field name="compile" type="compile" label="TPL_CDEVANGELIA_COMPILE_LESS_LABEL" description="TPL_CDEVANGELIA_COMPILE_LESS_DESC" />
+			</fieldset>		
+			<fieldset name="TPL_CDEVANGELIA_MENULOGO" addfieldpath="/templates/cdevangelia/admin">
+				<field name="cdmenu" type="list" default="0" label="TPL_CDEVANGELIA_MENU_LABEL" description="TPL_CDEVANGELIA_MENU_DESC" >
+						  <option value="0">TPL_CDEVANGELIA_MENU_DEF_OPTION</option>
+						  <option value="1">TPL_CDEVANGELIA_MENU_FIXED_OPTION</option>
+				</field>
+				<field name="menuColor" class="" type="color" default=""
+						label="TPL_CDEVANGELIA_MENUCOLOR_LABEL"
+						description="TPL_CDEVANGELIA_MENUCOLOR_DESC" />
+				<field name="menuColorContrast" class="" type="color" default=""
+						label="TPL_CDEVANGELIA_MENUCOLORCONTRAST_LABEL"
+						description="TPL_CDEVANGELIA_MENUCOLORCONTRAST_DESC" />
+				<field name="cdlogo" type="media" directory="stories"
+					label="TPL_CDEVANGELIA_LOGO_LABEL"
+					description="TPL_CDEVANGELIA_LOGO_DESC"  />
+				<field name="logowidth"  type="text" default=""
+					label="TPL_CDEVANGELIA_LOGOWIDTH_LABEL"
+					description="TPL_CDEVANGELIA_LOGOWIDTH_DESC"
+					filter="string" />
+				<field name="DismoduleLogoMenu" type="Dismodule" default="a3-b9" label="TPL_CDEVANGELIA_POSITION_FORZ_MENULOGO_LABEL" description="TPL_CDEVANGELIA_POSITION_FORZ_MENULOGO_DESC" />
+				<field name="DismoduleTabletLogoMenu" type="Dismodule" default="a3-b9" label="TPL_CDEVANGELIA_POSITION_FORZTABLET_MENULOGO_LABEL" description="TPL_CDEVANGELIA_POSITION_FORZTABLET_MENULOGO_DESC" />
+				<field name="DismoduleMobileLogoMenu" type="Dismodule" default="a3-b9" label="TPL_CDEVANGELIA_POSITION_FORZTABLET_MENULOGO_LABEL" description="TPL_CDEVANGELIA_POSITION_FORZTABLET_MENULOGO_DESC" />
+				<field name="pcSowMenu" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_PC_MENU_LABEL" description="TPL_CDEVANGELIA_PC_MENU_DESC">
+				<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+				<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="tabletSowMenu" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_TABLET_MENU_LABEL" description="TPL_CDEVANGELIA_TABLET_MENU_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="mobileSowMenu" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_MOBILE_MENU_LABEL" description="TPL_CDEVANGELIA_MOBILE_MENU_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="pcSowLogo" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_PC_LOGO_LABEL" description="TPL_CDEVANGELIA_PC_LOGO_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="tabletSowLogo" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_TABLET_LOGO_LABEL" description="TPL_CDEVANGELIA_TABLET_LOGO_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="mobileSowLogo" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_MOBILE_LOGO_LABEL" description="TPL_CDEVANGELIA_MOBILE_LOGO_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="pcMenuc" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_PC_MENU_LABEL" description="TPL_CDEVANGELIA_PC_MENU_DESC">
+				<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+				<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="tabletMenuc" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_TABLET_MENU_LABEL" description="TPL_CDEVANGELIA_TABLET_MENU_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="mobileMenuc" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_MOBILE_MENU_LABEL" description="TPL_CDEVANGELIA_MOBILE_MENU_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="pcMenud" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_PC_MENU_LABEL" description="TPL_CDEVANGELIA_PC_MENU_DESC">
+				<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+				<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="tabletMenud" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_TABLET_MENU_LABEL" description="TPL_CDEVANGELIA_TABLET_MENU_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="mobileMenud" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_MOBILE_MENU_LABEL" description="TPL_CDEVANGELIA_MOBILE_MENU_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="copyrighttextprev" class="" type="text" default=""
+						label="TPL_CDEVANGELIA_COPYRIGHTTEXTPREV_LABEL"
+						description="TPL_CDEVANGELIA_COPYRIGHTTEXTPREV_DESC" />
+				<field name="copyrighttextnext" class="" type="text" default=""
+						label="TPL_CDEVANGELIA_COPYRIGHTTEXTNEXT_LABEL"
+						description="TPL_CDEVANGELIA_COPYRIGHTTEXTNEXT_DESC" />
+				<field name="copyrighttext" class="" type="text" default=""
+						label="TPL_CDEVANGELIA_COPYRIGHTTEXT_LABEL"
+						description="TPL_CDEVANGELIA_COPYRIGHTTEXT_DESC" />
+				<field name="copyrighturl" class="" type="text" default=""
+						label="TPL_CDEVANGELIA_COPYRIGHTURL_LABEL"
+						description="TPL_CDEVANGELIA_COPYRIGHTURL_DESC" />
+				<field name="DismoduleData" type="Dismodule" label="TPL_CDEVANGELIA_POSITION_FORZ_DATA_LABEL"
+				description="TPL_CDEVANGELIA_POSITION_FORZ_DATA_DESC" />
+				<field name="DismoduleTabletData" type="Dismodule" label="TPL_CDEVANGELIA_POSITION_FORZTABLET_DATA_LABEL"
+				description="TPL_CDEVANGELIA_POSITION_FORZTABLET_DATA_DESC" />
+				<field name="cdtitledataa"  type="text" default=""
+					label="TPL_CDEVANGELIA_CDTITLEDATAA_LABEL"
+					description="TPL_CDEVANGELIA_CDTITLEDATAA_DESC"
+					filter="string" />
+				<field name="cdtelephonetext"  type="text" default=""
+					label="TPL_CDEVANGELIA_TELEPHONETEXT_LABEL"
+					description="TPL_CDEVANGELIA_TELEPHONETEXT_DESC"
+					filter="string" />
+				<field name="cdtelephone"  type="text" default=""
+					label="TPL_CDEVANGELIA_TELEPHONE_LABEL"
+					description="TPL_CDEVANGELIA_TELEPHONE_DESC"
+					filter="string" />
+				<field name="cdemailtext"  type="text" default=""
+					label="TPL_CDEVANGELIA_EMAILTEXT_LABEL"
+					description="TPL_CDEVANGELIA_EMAILTEXT_DESC"
+					filter="string" />
+				<field name="cdemail"  type="text" default=""
+					label="TPL_CDEVANGELIA_EMAIL_LABEL"
+					description="TPL_CDEVANGELIA_EMAIL_DESC"
+					filter="string" />
+				<field name="cdaddresstext"  type="text" default=""
+					label="TPL_CDEVANGELIA_ADDRESSTEXT_LABEL"
+					description="TPL_CDEVANGELIA_ADDRESSTEXT_DESC"
+					filter="string" />
+				<field name="cdaddress"  type="text" default=""
+					label="TPL_CDEVANGELIA_ADDRESS_LABEL"
+					description="TPL_CDEVANGELIA_ADDRESS_DESC"
+					filter="string" />
+				<field name="cdtitledatab"  type="text" default=""
+					label="TPL_CDEVANGELIA_CDTITLEDATAB_LABEL"
+					description="TPL_CDEVANGELIA_CDTITLEDATAB_DESC"
+					filter="string" />
+				<field name="cdcontacttextprev"  type="text" default=""
+					label="TPL_CDEVANGELIA_CDCONTACTTEXTPREV_LABEL"
+					description="TPL_CDEVANGELIA_CDCONTACTTEXTPREV_DESC"
+					filter="string" />
+				<field name="cdcontacttextnext"  type="text" default=""
+					label="TPL_CDEVANGELIA_CDCONTACTTEXTNEXT_LABEL"
+					description="TPL_CDEVANGELIA_CDCONTACTTEXTNEXT_DESC"
+					filter="string" />
+				<field name="cdcontacttext"  type="text" default=""
+					label="TPL_CDEVANGELIA_CDCONTACTTEXT_LABEL"
+					description="TPL_CDEVANGELIA_CDCONTACTTEXT_DESC"
+					filter="string" />
+				<field name="cdurlcontact"  type="text" default=""
+					label="TPL_CDEVANGELIA_CDURLCONTACT_LABEL"
+					description="TPL_CDEVANGELIA_CDURLCONTACT_DESC"
+					filter="string" />
+				<field name="cdtitledatac"  type="text" default=""
+					label="TPL_CDEVANGELIA_CDTITLEDATAC_LABEL"
+					description="TPL_CDEVANGELIA_CDTITLEDATAC_DESC"
+					filter="string" />
+				<field name="redsoacial1textprev" class="" type="text" default=""
+						label="TPL_CDEVANGELIA_REDSOCIAL1TEXTPREV_LABEL"
+						description="TPL_CDEVANGELIA_REDSOCIAL1TEXTPREV_DESC" />
+				<field name="redsoacial1textnext" class="" type="text" default=""
+						label="TPL_CDEVANGELIA_REDSOCIAL1TEXTNEXT_LABEL"
+						description="TPL_CDEVANGELIA_REDSOCIAL1TEXTNEXT_DESC" />
+				<field name="redsoacial1text" class="" type="text" default=""
+						label="TPL_CDEVANGELIA_REDSOCIAL1TEXT_LABEL"
+						description="TPL_CDEVANGELIA_REDSOCIAL1TEXT_DESC" />
+				<field name="redsoacial1url" class="" type="text" default=""
+						label="TPL_CDEVANGELIA_REDSOCIAL1URL_LABEL"
+						description="TPL_CDEVANGELIA_REDSOCIAL1URL_DESC" />
+				<field name="redsoacial2textprev" class="" type="text" default=""
+						label="TPL_CDEVANGELIA_REDSOCIAL2TEXTPREV_LABEL"
+						description="TPL_CDEVANGELIA_REDSOCIAL2TEXTPREV_DESC" />
+				<field name="redsoacial2textnext" class="" type="text" default=""
+						label="TPL_CDEVANGELIA_REDSOCIAL2TEXTNEXT_LABEL"
+						description="TPL_CDEVANGELIA_REDSOCIAL2TEXTNEXT_DESC" />
+				<field name="redsoacial2text" class="" type="text" default=""
+						label="TPL_CDEVANGELIA_REDSOCIAL2TEXT_LABEL"
+						description="TPL_CDEVANGELIA_REDSOCIAL2TEXTT_DESC" />
+				<field name="redsoacial2url" class="" type="text" default=""
+						label="TPL_CDEVANGELIA_REDSOCIAL2URL_LABEL"
+						description="TPL_CDEVANGELIA_REDSOCIAL2URL_DESC" />
+				<field name="redsoacial3textprev" class="" type="text" default=""
+						label="TPL_CDEVANGELIA_REDSOCIAL3TEXTPREV_LABEL"
+						description="TPL_CDEVANGELIA_REDSOCIAL3TEXTPREV_DESC" />
+				<field name="redsoacial3textnext" class="" type="text" default=""
+						label="TPL_CDEVANGELIA_REDSOCIAL3TEXTNEXT_LABEL"
+						description="TPL_CDEVANGELIA_REDSOCIAL3TEXTNEXT_DESC" />
+				<field name="redsoacial3text" class="" type="text" default=""
+						label="TPL_CDEVANGELIA_REDSOCIAL3TEXT_LABEL"
+						description="TPL_CDEVANGELIA_REDSOCIAL3TEXT_DESC" />
+				<field name="redsoacial3url" class="" type="text" default=""
+						label="TPL_CDEVANGELIA_REDSOCIAL3URL_LABEL"
+						description="TPL_CDEVANGELIA_REDSOCIAL3URL_DESC" />
+			</fieldset>		
+			<fieldset name="TPL_CDEVANGELIA_FONT">
+				<field name="fontColorbody" class="" type="color" default=""
+						label="TPL_CDEVANGELIA_FONTCOLORBODY_LABEL"
+						description="TPL_CDEVANGELIA_FONTCOLORBODY_DESC" />
+				<field name="templateColor" class="" type="color" default=""
+						label="TPL_CDEVANGELIA_COLOR_LABEL"
+						description="TPL_CDEVANGELIA_COLOR_DESC" />
+				<field name="fontdefault" type="list" default="Verdana, Geneva, sans-serif"
+					label="TPL_CDEVANGELIA_FONT_DEFAULT_NAME_LABEL"
+					description="TPL_CDEVANGELIA_FONT_DEFAULT_NAME_DESC">
+					<option value="">TPL_CDEVANGELIA_FONT_DEFAULT_SELECT</option>
+					<option value="Verdana, Geneva, sans-serif">Verdana, Geneva, sans-serif</option>
+					<option value="Georgia, Times, serif">Georgia, Times, serif</option>
+					<option value="Courier, monospace">Courier, monospace</option>
+					<option value="Arial, Helvetica, sans-serif">Arial, Helvetica, sans-serif</option>
+					<option value="Tahoma, Geneva, sans-serif">Tahoma, Geneva, sans-serif</option>
+					<option value="Palatino, serif">Palatino, serif</option>
+					<option value="Palatino, serif">Palatino, serif</option>
+				</field>
+				<field name="googlefontdefault" class="" type="text" default="ubuntu"
+						label="TPL_CDEVANGELIA_FONT_DEFAULT_GOOGLE_NAME_LABEL"
+						description="TPL_CDEVANGELIA_FONT_DEFAULT_GOOGLE_NAME_DESC" />
+				<field name="fonttitle" type="list" default="Georgia, Times, serif"
+					label="TPL_CDEVANGELIA_FONT_TITLE_NAME_LABEL"
+					description="TPL_CDEVANGELIA_FONT_TITLE_NAME_DESC">
+					<option value="">TPL_CDEVANGELIA_FONT_TITLE_SELECT</option>
+					<option value="Verdana, Geneva, sans-serif">Verdana, Geneva, sans-serif</option>
+					<option value="Georgia, Times, serif">Georgia, Times, serif</option>
+					<option value="Courier, monospace">Courier, monospace</option>
+					<option value="Arial, Helvetica, sans-serif">Arial, Helvetica, sans-serif</option>
+					<option value="Tahoma, Geneva, sans-serif">Tahoma, Geneva, sans-serif</option>
+					<option value="Palatino, serif">Palatino, serif</option>
+					<option value="Palatino, serif">Palatino, serif</option>
+				</field>
+				<field name="googlefonttitle" class="" type="text" default="ubuntu"
+					label="TPL_CDEVANGELIA_FONT_TITLE_GOOGLE_NAME_LABEL"
+					description="TPL_CDEVANGELIA_FONT_TITLE_GOOGLE_NAME_DESC" />
+				<field name="fontmenu" type="list" default="Verdana, Geneva, sans-serif"
+					label="TPL_CDEVANGELIA_FONT_MENU_NAME_LABEL"
+					description="TPL_CDEVANGELIA_FONT_MENU_NAME_DESC">
+					<option value="">TPL_CDEVANGELIA_FONT_MENU_SELECT</option>
+					<option value="Verdana, Geneva, sans-serif">Verdana, Geneva, sans-serif</option>
+					<option value="Georgia, Times, serif">Georgia, Times, serif</option>
+					<option value="Courier, monospace">Courier, monospace</option>
+					<option value="Arial, Helvetica, sans-serif">Arial, Helvetica, sans-serif</option>
+					<option value="Tahoma, Geneva, sans-serif">Tahoma, Geneva, sans-serif</option>
+					<option value="Palatino, serif">Palatino, serif</option>
+					<option value="Palatino, serif">Palatino, serif</option>
+				</field>
+				<field name="googlefontmenu" class="" type="text" default="ubuntu"
+						label="TPL_CDEVANGELIA_FONT_MENU_GOOGLE_NAME_LABEL"
+						description="TPL_CDEVANGELIA_FONT_MENU_GOOGLE_NAME_DESC" />
+			</fieldset>
+			<fieldset name="TPL_CDEVANGELIA_POSITION_FORZ_NAME" addfieldpath="/templates/cdevangelia/admin">
+				<field name="DismoduleTop1" type="Dismodule" label="TPL_CDEVANGELIA_POSITION_FORZ_TOP1_LABEL"
+				description="TPL_CDEVANGELIA_POSITION_FORZ_TOP1_DESC" />
+				<field name="DismoduleHeader" type="Dismodule" label="TPL_CDEVANGELIA_POSITION_FORZ_HEADER_LABEL"
+				description="TPL_CDEVANGELIA_POSITION_FORZ_HEADER_DESC" />
+				<field name="DismoduleTop2" type="Dismodule" label="TPL_CDEVANGELIA_POSITION_FORZ_TOP2_LABEL"
+				description="TPL_CDEVANGELIA_POSITION_FORZ_TOP2_DESC" />
+				<field name="DismoduleTop3" type="Dismodule" label="TPL_CDEVANGELIA_POSITION_FORZ_TOP3_LABEL"
+				description="TPL_CDEVANGELIA_POSITION_FORZ_TOP3_DES" />
+				<field name="DismoduleTop4" type="Dismodule" label="TPL_CDEVANGELIA_POSITION_FORZ_TOP4_LABEL"
+				description="TPL_CDEVANGELIA_POSITION_FORZ_TOP4_DESC" />
+				<field name="DismoduleMain" type="Dismodulemain" label="TPL_CDEVANGELIA_POSITION_FORZ_MAIN_LABEL"
+				description="TPL_CDEVANGELIA_POSITION_FORZ_MAIN_DESC" />
+				<field name="DismoduleMainTop" type="Dismodulemainpos" label="TPL_CDEVANGELIA_POSITION_FORZ_MAINTOP_LABEL" description="TPL_CDEVANGELIA_POSITION_FORZ_MAINTOP_DESC" />
+				<field name="DismoduleMainBot" type="Dismodulemainpos" label="TPL_CDEVANGELIA_POSITION_FORZ_MAINBOTTOM_LABEL" description="TPL_CDEVANGELIA_POSITION_FORZ_MAINBOTTOM_DESC" />
+				<field name="DismoduleBottom1" type="Dismodule" label="TPL_CDEVANGELIA_POSITION_FORZ_BOTTOM1_LABEL"
+				description="TPL_CDEVANGELIA_POSITION_FORZ_BOTTOM1_DESC" />
+				<field name="DismoduleBottom2" type="Dismodule" label="TPL_CDEVANGELIA_POSITION_FORZ_BOTTOM2_LABEL"
+				description="TPL_CDEVANGELIA_POSITION_FORZ_BOTTOM2_DESC" />
+				<field name="DismoduleBottom3" type="Dismodule" label="TPL_CDEVANGELIA_POSITION_FORZ_BOTTOM3_LABEL"
+				description="TPL_CDEVANGELIA_POSITION_FORZ_BOTTOM3_DESC" />
+				<field name="DismoduleBottom4" type="Dismodule" label="TPL_CDEVANGELIA_POSITION_FORZ_BOTTOM4_LABEL"
+				description="TPL_CDEVANGELIA_POSITION_FORZ_BOTTOM4_DESC" />
+				<field name="DismoduleFooter" type="Dismodule" label="TPL_CDEVANGELIA_POSITION_FORZ_FOOTER_LABEL"
+				description="TPL_CDEVANGELIA_POSITION_FORZ_FOOTER_DESC" />
+			</fieldset>
+			<fieldset name="TPL_CDEVANGELIA_POSITION_FORZTABLET_NAME" addfieldpath="/templates/cdevangelia/admin">
+				<field name="DismoduleTabletTop1" type="Dismodule" label="TPL_CDEVANGELIA_POSITION_FORZTABLET_TOP1_LABEL"
+				description="TPL_CDEVANGELIA_POSITION_FORZTABLET_TOP1_DESC" />
+				<field name="DismoduleTabletHeader" type="Dismodule" label="TPL_CDEVANGELIA_POSITION_FORZTABLET_HEADER_LABEL"
+				description="TPL_CDEVANGELIA_POSITION_FORZTABLET_HEADER_DESC" />
+				<field name="DismoduleTabletTop2" type="Dismodule" label="TPL_CDEVANGELIA_POSITION_FORZTABLET_TOP2_LABEL"
+				description="TPL_CDEVANGELIA_POSITION_FORZTABLET_TOP2_DESC" />
+				<field name="DismoduleTabletTop3" type="Dismodule" label="TPL_CDEVANGELIA_POSITION_FORZTABLET_TOP3_LABEL"
+				description="TPL_CDEVANGELIA_POSITION_FORZTABLET_TOP3_DES" />
+				<field name="DismoduleTabletTop4" type="Dismodule" label="TPL_CDEVANGELIA_POSITION_FORZTABLET_TOP4_LABEL"
+				description="TPL_CDEVANGELIA_POSITION_FORZTABLET_TOP4_DESC" />
+				<field name="DismoduleTabletMain" type="Dismodulemain" label="TPL_CDEVANGELIA_POSITION_FORZTABLET_MAIN_LABEL"
+				description="TPL_CDEVANGELIA_POSITION_FORZTABLET_MAIN_DESC" />
+				<field name="DismoduleTabletMainTop" type="Dismodulemainpos" label="TPL_CDEVANGELIA_POSITION_FORZTABLET_MAINTOP_LABEL" description="TPL_CDEVANGELIA_POSITION_FORZTABLET_MAINTOP_DESC" />
+				<field name="DismoduleTabletMainBot" type="Dismodulemainpos" label="TPL_CDEVANGELIA_POSITION_FORZTABLET_MAINBOTTOM_LABEL" description="TPL_CDEVANGELIA_POSITION_FORZTABLET_MAINBOTTOM_DESC" />
+				<field name="DismoduleTabletBottom1" type="Dismodule" label="TPL_CDEVANGELIA_POSITION_FORZTABLET_BOTTOM1_LABEL"
+				description="TPL_CDEVANGELIA_POSITION_FORZTABLET_BOTTOM1_DESC" />
+				<field name="DismoduleTabletBottom2" type="Dismodule" label="TPL_CDEVANGELIA_POSITION_FORZTABLET_BOTTOM2_LABEL"
+				description="TPL_CDEVANGELIA_POSITION_FORZTABLET_BOTTOM2_DESC" />
+				<field name="DismoduleTabletBottom3" type="Dismodule" label="TPL_CDEVANGELIA_POSITION_FORZTABLET_BOTTOM3_LABEL"
+				description="TPL_CDEVANGELIA_POSITION_FORZTABLET_BOTTOM3_DESC" />
+				<field name="DismoduleTabletBottom4" type="Dismodule" label="TPL_CDEVANGELIA_POSITION_FORZTABLET_BOTTOM4_LABEL"
+				description="TPL_CDEVANGELIA_POSITION_FORZTABLET_BOTTOM4_DESC" />
+				<field name="DismoduleTabletFooter" type="Dismodule" label="TPL_CDEVANGELIA_POSITION_FORZTABLET_FOOTER_LABEL"
+				description="TPL_CDEVANGELIA_POSITION_FORZTABLET_FOOTER_DESC" />
+			</fieldset>
+			<fieldset name="TPL_CDEVANGELIA_POSITION_FORZMOBILE_NAME" addfieldpath="/templates/cdevangelia/admin">
+				<field name="DismoduleMobileTop1" type="Dismodule" label="TPL_CDEVANGELIA_POSITION_FORZMOBILE_TOP1_LABEL"
+				description="TPL_CDEVANGELIA_POSITION_FORZMOBILE_TOP1_DESC" />
+				<field name="DismoduleMobileHeader" type="Dismodule" label="TPL_CDEVANGELIA_POSITION_FORZMOBILE_HEADER_LABEL"
+				description="TPL_CDEVANGELIA_POSITION_FORZMOBILE_HEADER_DESC" />
+				<field name="DismoduleMobileTop2" type="Dismodule" label="TPL_CDEVANGELIA_POSITION_FORZMOBILE_TOP2_LABEL"
+				description="TPL_CDEVANGELIA_POSITION_FORZMOBILE_TOP2_DESC" />
+				<field name="DismoduleMobileTop3" type="Dismodule" label="TPL_CDEVANGELIA_POSITION_FORZMOBILE_TOP3_LABEL"
+				description="TPL_CDEVANGELIA_POSITION_FORZMOBILE_TOP3_DES" />
+				<field name="DismoduleMobileTop4" type="Dismodule" label="TPL_CDEVANGELIA_POSITION_FORZMOBILE_TOP4_LABEL"
+				description="TPL_CDEVANGELIA_POSITION_FORZMOBILE_TOP4_DESC" />
+				<field name="DismoduleMobileMain" type="Dismodulemain" label="TPL_CDEVANGELIA_POSITION_FORZMOBILE_MAIN_LABEL"
+				description="TPL_CDEVANGELIA_POSITION_FORZMOBILE_MAIN_DESC" />
+				<field name="DismoduleMobileMainTop" type="Dismodulemainpos" label="TPL_CDEVANGELIA_POSITION_FORZMOBILE_MAINTOP_LABEL" description="TPL_CDEVANGELIA_POSITION_FORZMOBILE_MAINTOP_DESC" />
+				<field name="DismoduleMobileMainBot" type="Dismodulemainpos" label="TPL_CDEVANGELIA_POSITION_FORZMOBILE_MAINBOTTOM_LABEL" description="TPL_CDEVANGELIA_POSITION_FORZMOBILE_MAINBOTTOM_DESC" />
+				<field name="DismoduleMobileBottom1" type="Dismodule" label="TPL_CDEVANGELIA_POSITION_FORZMOBILE_BOTTOM1_LABEL"
+				description="TPL_CDEVANGELIA_POSITION_FORZMOBILE_BOTTOM1_DESC" />
+				<field name="DismoduleMobileBottom2" type="Dismodule" label="TPL_CDEVANGELIA_POSITION_FORZMOBILE_BOTTOM2_LABEL"
+				description="TPL_CDEVANGELIA_POSITION_FORZMOBILE_BOTTOM2_DESC" />
+				<field name="DismoduleMobileBottom3" type="Dismodule" label="TPL_CDEVANGELIA_POSITION_FORZMOBILE_BOTTOM3_LABEL"
+				description="TPL_CDEVANGELIA_POSITION_FORZMOBILE_BOTTOM3_DESC" />
+				<field name="DismoduleMobileBottom4" type="Dismodule" label="TPL_CDEVANGELIA_POSITION_FORZMOBILE_BOTTOM4_LABEL"
+				description="TPL_CDEVANGELIA_POSITION_FORZMOBILE_BOTTOM4_DESC" />
+				<field name="DismoduleMobileFooter" type="Dismodule" label="TPL_CDEVANGELIA_POSITION_FORZMOBILE_FOOTER_LABEL"
+				description="TPL_CDEVANGELIA_POSITION_FORZMOBILE_FOOTER_DESC" />
+			</fieldset>
+			<fieldset name="TPL_CDEVANGELIA_PC_NAME">
+				<field name="pcTop1a" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_PC_TOP1A_LABEL" description="TPL_CDEVANGELIA_PC_TOP1A_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="pcTop1b" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_PC_TOP1B_LABEL" description="TPL_CDEVANGELIA_PC_TOP1B_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="pcTop1c" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_PC_TOP1C_LABEL" description="TPL_CDEVANGELIA_PC_TOP1C_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="pcTop1d" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_PC_TOP1D_LABEL" description="TPL_CDEVANGELIA_PC_TOP1D_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field type="spacer" name="" hr="false" class="cdspacer"/>
+				<field name="pcHeadera" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_PC_HEADERA_LABEL" description="TPL_CDEVANGELIA_PC_HEADERA_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="pcHeaderb" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_PC_HEADERB_LABEL" description="TPL_CDEVANGELIA_PC_HEADERB_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="pcHeaderc" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_PC_HEADERC_LABEL" description="TPL_CDEVANGELIA_PC_HEADERC_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="pcHeaderd" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_PC_HEADERD_LABEL" description="TPL_CDEVANGELIA_PC_HEADERD_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field type="spacer" name="" hr="false" class="cdspacer"/>
+				<field name="pcTop2a" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_PC_TOP2A_LABEL" description="TPL_CDEVANGELIA_PC_TOP2A_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="pcTop2b" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_PC_TOP2B_LABEL" description="TPL_CDEVANGELIA_PC_TOP2B_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="pcTop2c" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_PC_TOP2C_LABEL" description="TPL_CDEVANGELIA_PC_TOP2C_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="pcTop2d" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_PC_TOP2D_LABEL" description="TPL_CDEVANGELIA_PC_TOP2D_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field type="spacer" name="" hr="false" class="cdspacer"/>
+				<field name="pcTop3a" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_PC_TOP3A_LABEL" description="TPL_CDEVANGELIA_PC_TOP3A_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="pcTop3b" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_PC_TOP3B_LABEL" description="TPL_CDEVANGELIA_PC_TOP3B_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="pcTop3c" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_PC_TOP3C_LABEL" description="TPL_CDEVANGELIA_PC_TOP3C_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="pcTop3d" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_PC_TOP3D_LABEL" description="TPL_CDEVANGELIA_PC_TOP3D_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field type="spacer" name="" hr="false" class="cdspacer"/>
+				<field name="pcTop4a" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_PC_TOP4A_LABEL" description="TPL_CDEVANGELIA_PC_TOP4A_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="pcTop4b" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_PC_TOP4B_LABEL" description="TPL_CDEVANGELIA_PC_TOP4B_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="pcTop4c" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_PC_TOP4C_LABEL" description="TPL_CDEVANGELIA_PC_TOP4C_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="pcTop4d" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_PC_TOP4D_LABEL" description="TPL_CDEVANGELIA_PC_TOP4D_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field type="spacer" name="" hr="false" class="cdspacer"/>
+				<field name="pcLefta" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_PC_LEFTA_LABEL" description="TPL_CDEVANGELIA_PC_LEFTA_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="pcLeftb" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_PC_LEFTB_LABEL" description="TPL_CDEVANGELIA_PC_LEFTB_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field type="spacer" name="RIGHT" hr="false" class="cdspacer"/>
+				<field name="pcRighta" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_PC_RIGHTA_LABEL" description="TPL_CDEVANGELIA_PC_RIGHTA_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="pcRightb" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_PC_RIGHTB_LABEL" description="TPL_CDEVANGELIA_PC_RIGHTB_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field type="spacer" name="" hr="false" class="cdspacer"/>
+				<field name="pcMainta" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_PC_MAINTOPA_LABEL" description="TPL_CDEVANGELIA_PC_MAINTOPA_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="pcMaintb" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_PC_MAINTOPB_LABEL" description="TPL_CDEVANGELIA_PC_MAINTOPB_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field type="spacer" name="" hr="false" class="cdspacer"/>
+				<field name="pcMain" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_PC_MAIN_LABEL" description="TPL_CDEVANGELIA_PC_MAIN_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field type="spacer" name="" hr="false" class="cdspacer"/>
+				<field name="pcMainba" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_PC_MAINBOTTOMA_LABEL" description="TPL_CDEVANGELIA_PC_MAINBOTTOMA_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="pcMainbb" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_PC_MAINBOTTOMB_LABEL" description="TPL_CDEVANGELIA_PC_MAINBOTTOMB_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field type="spacer" name="" hr="false" class="cdspacer"/>
+				<field name="pcBottom1a" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_PC_BOTTOM1A_LABEL" description="TPL_CDEVANGELIA_PC_BOTTOM1A_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="pcBottom1b" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_PC_BOTTOM1B_LABEL" description="TPL_CDEVANGELIA_PC_BOTTOM1B_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="pcBottom1c" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_PC_BOTTOM1C_LABEL" description="TPL_CDEVANGELIA_PC_BOTTOM1C_DESC">
+				<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+						  <option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="pcBottom1d" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_PC_BOTTOM1D_LABEL" description="TPL_CDEVANGELIA_PC_BOTTOM1D_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field type="spacer" name="" hr="false" class="cdspacer"/>
+				<field name="pcBottom2a" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_PC_BOTTOM2A_LABEL" description="TPL_CDEVANGELIA_PC_BOTTOM2A_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="pcBottom2b" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_PC_BOTTOM2B_LABEL" description="TPL_CDEVANGELIA_PC_BOTTOM2B_LABEL">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="pcBottom2c" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_PC_BOTTOM2C_LABEL" description="TPL_CDEVANGELIA_PC_BOTTOM2C_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="pcBottom2d" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_PC_BOTTOM2D_LABEL" description="TPL_CDEVANGELIA_PC_BOTTOM2D_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field type="spacer" name="" hr="false" class="cdspacer"/>
+				<field name="pcBottom3a" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_PC_BOTTOM3A_LABEL" description="TPL_CDEVANGELIA_PC_BOTTOM3A_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="pcBottom3b" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_PC_BOTTOM3B_LABEL" description="TPL_CDEVANGELIA_PC_BOTTOM3B_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="pcBottom3c" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_PC_BOTTOM3C_LABEL" description="TPL_CDEVANGELIA_PC_BOTTOM3C_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="pcBottom3d" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_PC_BOTTOM3D_LABEL" description="TPL_CDEVANGELIA_PC_BOTTOM3D_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field type="spacer" name="" hr="false" class="cdspacer"/>
+				<field name="pcBottom4a" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_PC_BOTTOM4A_LABEL" description="TPL_CDEVANGELIA_PC_BOTTOM4A_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="pcBottom4b" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_PC_BOTTOM4B_LABEL" description="TPL_CDEVANGELIA_PC_BOTTOM4B_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="pcBottom4c" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_PC_BOTTOM4C_LABEL" description="TPL_CDEVANGELIA_PC_BOTTOM4C_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="pcBottom4d" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_PC_BOTTOM4D_LABEL" description="TPL_CDEVANGELIA_PC_BOTTOM4D_LABEL">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field type="spacer" name="" hr="false" class="cdspacer"/>
+				<field name="pcFootera" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_PC_FOOTERA_LABEL" description="TPL_CDEVANGELIA_PC_FOOTERA_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="pcFooterb" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_PC_FOOTERB_LABEL" description="TPL_CDEVANGELIA_PC_FOOTERB_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="pcFooterc" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_PC_FOOTERC_LABEL" description="TPL_CDEVANGELIA_PC_FOOTERC_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="pcFooterd" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_PC_FOOTERD_LABEL" description="TPL_CDEVANGELIA_PC_FOOTERD_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field type="spacer" name="" hr="false" class="cdspacer"/>
+				<field name="pcdataa" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_PC_DATAA_LABEL" description="TPL_CDEVANGELIA_PC_DATAA_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="pcdatab" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_PC_DATAB_LABEL" description="TPL_CDEVANGELIA_PC_DATAB_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="pcdatac" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_PC_DATAC_LABEL" description="TPL_CDEVANGELIA_PC_DATAC_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="pcdatad" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_PC_DATAD_LABEL" description="TPL_CDEVANGELIA_PC_DATAD_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+						<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+			</fieldset>
+			<fieldset name="TPL_CDEVANGELIA_TABLET_NAME">
+				<field name="tabletTop1a" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_TABLET_TOP1A_LABEL" description="TPL_CDEVANGELIA_TABLET_TOP1A_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="tabletTop1b" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_TABLET_TOP1B_LABEL" description="TPL_CDEVANGELIA_TABLET_TOP1B_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="tabletTop1c" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_TABLET_TOP1C_LABEL" description="TPL_CDEVANGELIA_TABLET_TOP1C_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="tabletTop1d" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_TABLET_TOP1D_LABEL" description="TPL_CDEVANGELIA_TABLET_TOP1D_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field type="spacer" name="" hr="false" class="cdspacer"/>
+				<field name="tabletHeadera" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_TABLET_HEADERA_LABEL" description="TPL_CDEVANGELIA_TABLET_HEADERA_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="tabletHeaderb" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_TABLET_HEADERB_LABEL" description="TPL_CDEVANGELIA_TABLET_HEADERB_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="tabletHeaderc" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_TABLET_HEADERC_LABEL" description="TPL_CDEVANGELIA_TABLET_HEADERC_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="tabletHeaderd" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_TABLET_HEADERD_LABEL" description="TPL_CDEVANGELIA_TABLET_HEADERD_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field type="spacer" name="" hr="false" class="cdspacer"/>
+				<field name="tabletTop2a" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_TABLET_TOP2A_LABEL" description="TPL_CDEVANGELIA_TABLET_TOP2A_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="tabletTop2b" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_TABLET_TOP2B_LABEL" description="TPL_CDEVANGELIA_TABLET_TOP2B_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="tabletTop2c" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_TABLET_TOP2C_LABEL" description="TPL_CDEVANGELIA_TABLET_TOP2C_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="tabletTop2d" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_TABLET_TOP2D_LABEL" description="TPL_CDEVANGELIA_TABLET_TOP2D_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field type="spacer" name="" hr="false" class="cdspacer"/>
+				<field name="tabletTop3a" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_TABLET_TOP3A_LABEL" description="TPL_CDEVANGELIA_TABLET_TOP3A_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="tabletTop3b" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_TABLET_TOP3B_LABEL" description="TPL_CDEVANGELIA_TABLET_TOP3B_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="tabletTop3c" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_TABLET_TOP3C_LABEL" description="TPL_CDEVANGELIA_TABLET_TOP3C_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="tabletTop3d" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_TABLET_TOP3D_LABEL" description="TPL_CDEVANGELIA_TABLET_TOP3D_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field type="spacer" name="" hr="false" class="cdspacer"/>
+				<field name="tabletTop4a" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_TABLET_TOP4A_LABEL" description="TPL_CDEVANGELIA_TABLET_TOP4A_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="tabletTop4b" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_TABLET_TOP4B_LABEL" description="TPL_CDEVANGELIA_TABLET_TOP4B_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="tabletTop4c" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_TABLET_TOP4C_LABEL" description="TPL_CDEVANGELIA_TABLET_TOP4C_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="tabletTop4d" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_TABLET_TOP4D_LABEL" description="TPL_CDEVANGELIA_TABLET_TOP4D_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field type="spacer" name="" hr="false" class="cdspacer"/>
+				<field name="tabletLefta" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_TABLET_LEFTA_LABEL" description="TPL_CDEVANGELIA_TABLET_LEFTA_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="tabletLeftb" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_TABLET_LEFTB_LABEL" description="TPL_CDEVANGELIA_TABLET_LEFTB_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field type="spacer" name="" hr="false" class="cdspacer"/>
+				<field name="tabletRighta" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_TABLET_RIGHTA_LABEL" description="TPL_CDEVANGELIA_TABLET_RIGHTA_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="tabletRightb" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_TABLET_RIGHTB_LABEL" description="TPL_CDEVANGELIA_TABLET_RIGHTB_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field type="spacer" name="" hr="false" class="cdspacer"/>
+				<field name="tabletMainta" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_TABLET_MAINTOPA_LABEL" description="TPL_CDEVANGELIA_TABLET_MAINTOPA_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="tabletMaintb" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_TABLET_MAINTOPB_LABEL" description="TPL_CDEVANGELIA_TABLET_MAINTOPB_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field type="spacer" name="" hr="false" class="cdspacer"/>
+				<field name="tabletMain" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_TABLET_MAIN_LABEL" description="TPL_CDEVANGELIA_TABLET_MAIN_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field type="spacer" name="" hr="false" class="cdspacer"/>
+				<field name="tabletMainba" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_TABLET_MAINBOTTOMA_LABEL" description="TPL_CDEVANGELIA_TABLET_MAINBOTTOMA_DESC">
+				<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+						  <option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="tabletMainbb" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_TABLET_MAINBOTTOMB_LABEL" description="TPL_CDEVANGELIA_TABLET_MAINBOTTOMB_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field type="spacer" name="" hr="false" class="cdspacer"/>
+				<field name="tabletBottom1a" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_TABLET_BOTTOM1A_LABEL" description="TPL_CDEVANGELIA_TABLET_BOTTOM1A_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="tabletBottom1b" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_TABLET_BOTTOM1B_LABEL" description="TPL_CDEVANGELIA_TABLET_BOTTOM1B_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="tabletBottom1c" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_TABLET_BOTTOM1C_LABEL" description="TPL_CDEVANGELIA_TABLET_BOTTOM1C_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="tabletBottom1d" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_TABLET_BOTTOM1D_LABEL" description="TPL_CDEVANGELIA_TABLET_BOTTOM1D_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field type="spacer" name="" hr="false" class="cdspacer"/>
+				<field name="tabletBottom2a" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_TABLET_BOTTOM2A_LABEL" description="TPL_CDEVANGELIA_TABLET_BOTTOM2A_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="tabletBottom2b" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_TABLET_BOTTOM2B_LABEL" description="TPL_CDEVANGELIA_TABLET_BOTTOM2B_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="tabletBottom2c" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_TABLET_BOTTOM2C_LABEL" description="TPL_CDEVANGELIA_TABLET_BOTTOM2C_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="tabletBottom2d" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_TABLET_BOTTOM2D_LABEL" description="TPL_CDEVANGELIA_TABLET_BOTTOM2D_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field type="spacer" name="" hr="false" class="cdspacer"/>
+				<field name="tabletBottom3a" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_TABLET_BOTTOM3A_LABEL" description="TPL_CDEVANGELIA_TABLET_BOTTOM3A_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="tabletBottom3b" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_TABLET_BOTTOM3B_LABEL" description="TPL_CDEVANGELIA_TABLET_BOTTOM3B_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="tabletBottom3c" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_TABLET_BOTTOM3C_LABEL" description="TPL_CDEVANGELIA_TABLET_BOTTOM3C_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="tabletBottom3d" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_TABLET_BOTTOM3D_LABEL" description="TPL_CDEVANGELIA_TABLET_BOTTOM3D_LABEL">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field type="spacer" name="" hr="false" class="cdspacer"/>
+				<field name="tabletBottom4a" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_TABLET_BOTTOM4A_LABEL" description="TPL_CDEVANGELIA_TABLET_BOTTOM4A_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="tabletBottom4b" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_TABLET_BOTTOM4B_LABEL" description="TPL_CDEVANGELIA_TABLET_BOTTOM4B_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="tabletBottom4c" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_TABLET_BOTTOM4C_LABEL" description="TPL_CDEVANGELIA_TABLET_BOTTOM4C_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="tabletBottom4d" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_TABLET_BOTTOM4D_LABEL" description="TPL_CDEVANGELIA_TABLET_BOTTOM4D_LABEL">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field type="spacer" name="" hr="false" class="cdspacer"/>
+				<field name="tabletFootera" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_TABLET_FOOTERA_LABEL" description="TPL_CDEVANGELIA_TABLET_FOOTERA_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="tabletFooterb" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_TABLET_FOOTERB_LABEL" description="TPL_CDEVANGELIA_TABLET_FOOTERB_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="tabletFooterc" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_TABLET_FOOTERC_LABEL" description="TPL_CDEVANGELIA_TABLET_FOOTERC_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="tabletFooterd" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_TABLET_FOOTERD_LABEL" description="TPL_CDEVANGELIA_TABLET_FOOTERD_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field type="spacer" name="" hr="false" class="cdspacer"/>
+				<field name="tabletdataa" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_TABLET_DATAA_LABEL" description="TPL_CDEVANGELIA_TABLET_DATAA_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="tabletdatab" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_TABLET_DATAB_LABEL" description="TPL_CDEVANGELIA_TABLET_DATAB_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="tabletdatac" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_TABLET_DATAC_LABEL" description="TPL_CDEVANGELIA_TABLET_DATAC_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="tabletdatad" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_TABLET_DATAD_LABEL" description="TPL_CDEVANGELIA_TABLET_DATAD_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+			</fieldset>
+			<fieldset name="TPL_CDEVANGELIA_MOBILE_NAME">
+				<field name="mobileTop1a" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_MOBILE_TOP1A_LABEL" description="TPL_CDEVANGELIA_MOBILE_TOP1A_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="mobileTop1b" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_MOBILE_TOP1B_LABEL" description="TPL_CDEVANGELIA_MOBILE_TOP1B_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="mobileTop1c" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_MOBILE_TOP1C_LABEL" description="TPL_CDEVANGELIA_MOBILE_TOP1C_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="mobileTop1d" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_MOBILE_TOP1D_LABEL" description="TPL_CDEVANGELIA_MOBILE_TOP1D_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field type="spacer" name="" hr="false" class="cdspacer"/>				
+				<field name="mobileHeadera" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_MOBILE_HEADERA_LABEL" description="CDEVANGELIA_MOBILE_HEADERA_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="mobileHeaderb" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_MOBILE_HEADERB_LABEL" description="TPL_CDEVANGELIA_MOBILE_HEADERB_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="mobileHeaderc" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_MOBILE_HEADERC_LABEL" description="TPL_CDEVANGELIA_MOBILE_HEADERC_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="mobileHeaderd" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_MOBILE_HEADERD_LABEL" description="TPL_CDEVANGELIA_MOBILE_HEADERD_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field type="spacer" name="" hr="false" class="cdspacer"/>			
+				<field name="mobileTop2a" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_MOBILE_TOP2A_LABEL" description="TPL_CDEVANGELIA_MOBILE_TOP2A_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="mobileTop2b" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_MOBILE_TOP2B_LABEL" description="TPL_CDEVANGELIA_MOBILE_TOP2B_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="mobileTop2c" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_MOBILE_TOP2C_LABEL" description="TPL_CDEVANGELIA_MOBILE_TOP2C_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="mobileTop2d" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_MOBILE_TOP2D_LABEL" description="TPL_CDEVANGELIA_MOBILE_TOP2D_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field type="spacer" name="" hr="false" class="cdspacer"/>
+				<field name="mobileTop3a" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_MOBILE_TOP3A_LABEL" description="TPL_CDEVANGELIA_MOBILE_TOP3A_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="mobileTop3b" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_MOBILE_TOP3B_LABEL" description="TPL_CDEVANGELIA_MOBILE_TOP3B_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="mobileTop3c" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_MOBILE_TOP3C_LABEL" description="TPL_CDEVANGELIA_MOBILE_TOP3C_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="mobileTop3d" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_MOBILE_TOP3D_LABEL" description="TPL_CDEVANGELIA_MOBILE_TOP3D_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field type="spacer" name="" hr="false" class="cdspacer"/>
+				<field name="mobileTop4a" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_MOBILE_TOP4A_LABEL" description="TPL_CDEVANGELIA_MOBILE_TOP4A_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="mobileTop4b" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_MOBILE_TOP4B_LABEL" description="TPL_CDEVANGELIA_MOBILE_TOP4B_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="mobileTop4c" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_MOBILE_TOP4C_LABEL" description="TPL_CDEVANGELIA_MOBILE_TOP4C_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="mobileTop4d" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_MOBILE_TOP4D_LABEL" description="TPL_CDEVANGELIA_MOBILE_TOP4D_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field type="spacer" name="" hr="false" class="cdspacer"/>
+				<field name="mobileLefta" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_MOBILE_LEFTA_LABEL" description="TPL_CDEVANGELIA_MOBILE_LEFTA_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="mobileLeftb" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_MOBILE_LEFTB_LABEL" description="TPL_CDEVANGELIA_MOBILE_LEFTB_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field type="spacer" name="" hr="false" class="cdspacer"/>
+				<field name="mobileRighta" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_MOBILE_RIGHTA_LABEL" description="TPL_CDEVANGELIA_MOBILE_RIGHTA_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="mobileRightb" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_MOBILE_RIGHTB_LABEL" description="TPL_CDEVANGELIA_MOBILE_RIGHTB_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field type="spacer" name="" hr="false" class="cdspacer"/>
+				<field name="mobileMainta" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_MOBILE_MAINTOPA_LABEL" description="TPL_CDEVANGELIA_MOBILE_MAINTOPA_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="mobileMaintb" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_MOBILE_MAINTOPB_LABEL" description="TPL_CDEVANGELIA_MOBILE_MAINTOPB_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field type="spacer" name="" hr="false" class="cdspacer"/>
+				<field name="mobileMain" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_MOBILE_MAIN_LABEL" description="TPL_CDEVANGELIA_MOBILE_MAIN_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field type="spacer" name="" hr="false" class="cdspacer"/>
+				<field name="mobileMainba" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_MOBILE_MAINBOTTOMA_LABEL" description="TPL_CDEVANGELIA_MOBILE_MAINBOTTOMA_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="mobileMainbb" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_MOBILE_MAINBOTTOMB_LABEL" description="TPL_CDEVANGELIA_MOBILE_MAINBOTTOMB_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field type="spacer" name="" hr="false" class="cdspacer"/>
+				<field name="mobileBottom1a" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_MOBILE_BOTTOM1A_LABEL" description="TPL_CDEVANGELIA_MOBILE_BOTTOM1A_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="mobileBottom1b" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_MOBILE_BOTTOM1B_LABEL" description="TPL_CDEVANGELIA_MOBILE_BOTTOM1B_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="mobileBottom1c" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_MOBILE_BOTTOM1C_LABEL" description="TPL_CDEVANGELIA_MOBILE_BOTTOM1C_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="mobileBottom1d" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_MOBILE_BOTTOM1D_LABEL" description="TPL_CDEVANGELIA_MOBILE_BOTTOM1D_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field type="spacer" name="" hr="false" class="cdspacer"/>
+				<field name="mobileBottom2a" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_MOBILE_BOTTOM2A_LABEL" description="TPL_CDEVANGELIA_MOBILE_BOTTOM2A_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="mobileBottom2b" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_MOBILE_BOTTOM2B_LABEL" description="TPL_CDEVANGELIA_MOBILE_BOTTOM2B_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="mobileBottom2c" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_MOBILE_BOTTOM2C_LABEL" description="TPL_CDEVANGELIA_MOBILE_BOTTOM2C_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="mobileBottom2d" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_MOBILE_BOTTOM2D_LABEL" description="TPL_CDEVANGELIA_MOBILE_BOTTOM2D_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field type="spacer" name="" hr="false" class="cdspacer"/>
+				<field name="mobileBottom3a" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_MOBILE_BOTTOM3A_LABEL" description="TPL_CDEVANGELIA_MOBILE_BOTTOM3A_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="mobileBottom3b" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_MOBILE_BOTTOM3B_LABEL" description="TPL_CDEVANGELIA_MOBILE_BOTTOM3B_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="mobileBottom3c" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_MOBILE_BOTTOM3C_LABEL" description="TPL_CDEVANGELIA_MOBILE_BOTTOM3C_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="mobileBottom3d" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_MOBILE_BOTTOM3D_LABEL" description="TPL_CDEVANGELIA_MOBILE_BOTTOM3D_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field type="spacer" name="" hr="false" class="cdspacer"/>
+				<field name="mobileBottom4a" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_MOBILE_BOTTOM4A_LABEL" description="TPL_CDEVANGELIA_MOBILE_BOTTOM4A_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="mobileBottom4b" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_MOBILE_BOTTOM4B_LABEL" description="TPL_CDEVANGELIA_MOBILE_BOTTOM4B_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="mobileBottom4c" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_MOBILE_BOTTOM4C_LABEL" description="TPL_CDEVANGELIA_MOBILE_BOTTOM4C_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="mobileBottom4d" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_MOBILE_BOTTOM4D_LABEL" description="TPL_CDEVANGELIA_MOBILE_BOTTOM4D_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field type="spacer" name="" hr="false" class="cdspacer"/>
+				<field name="mobileFootera" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_MOBILE_FOOTERA_LABEL" description="CDEVANGELIA_MOBILE_FOOTERA_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="mobileFooterb" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_MOBILE_FOOTERB_LABEL" description="TPL_CDEVANGELIA_MOBILE_FOOTERB_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="mobileFooterc" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_MOBILE_FOOTERC_LABEL" description="TPL_CDEVANGELIA_MOBILE_FOOTERC_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="mobileFooterd" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_MOBILE_FOOTERD_LABEL" description="TPL_CDEVANGELIA_MOBILE_FOOTERD_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field type="spacer" name="" hr="false" class="cdspacer"/>
+				<field name="mobiledataa" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_MOBILE_DATAA_LABEL" description="CDEVANGELIA_MOBILE_DATAA_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="mobiledatab" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_MOBILE_DATAB_LABEL" description="TPL_CDEVANGELIA_MOBILE_DATAB_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="mobiledatac" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_MOBILE_DATAC_LABEL" description="TPL_CDEVANGELIA_MOBILE_DATAC_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+				<field name="mobiledatad" type="radio" class="btn-group" default="1" label="TPL_CDEVANGELIA_MOBILE_DATAD_LABEL" description="TPL_CDEVANGELIA_MOBILE_DATAD_DESC">
+					<option value="0">TPL_CDEVANGELIA_HIDDEN</option>
+					<option value="1">TPL_CDEVANGELIA_VISIBLE</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
